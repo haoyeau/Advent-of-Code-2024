@@ -2,5 +2,8 @@
 Kotlin solutions for advent of code 2024.
 ## Problem Key Concept
 ### day1
-- Part1: sort
-- Part2: count
+- Part1: sort and iterate list
+- Part2: count number in list
+### day2
+- Part1: check list order 
+- Part2: identify which level to remove
