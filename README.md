@@ -7,3 +7,6 @@ Kotlin solutions for advent of code 2024.
 ### day2
 - Part1: check list order 
 - Part2: identify which level to remove
+### day3
+- Part1: regex search
+- Part2: enable condition logic
