@@ -10,3 +10,6 @@ Kotlin solutions for advent of code 2024.
 ### day3
 - Part1: regex search
 - Part2: enable condition logic
+### day4
+- Part1: search word in direction
+- Part2: locate character shape 
