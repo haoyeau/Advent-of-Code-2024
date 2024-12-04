@@ -55,4 +55,29 @@ object Day4Solution {
         return count;
     }
 
+    // part2
+    fun countMAS(): Int{
+        // read input
+        val grid = File("src/main/kotlin/day4/input.txt").readLines();
+        val rows = grid.size
+        val cols = grid[0].length
+        var count = 0
+
+        // check MAS shape
+        fun findMAS(x: Int, y: Int): Boolean{
+            return setOf(grid[x-1][y-1], grid[x+1][y+1]) == setOf('M','S')
+                    && setOf(grid[x-1][y+1], grid[x+1][y-1]) == setOf('M', 'S')
+        }
+
+        // first find the center A, then check diagonal direction
+        for(x in 1 until rows - 1){
+            for(y in 1 until cols - 1){
+                if(grid[x][y] == 'A' && findMAS(x,y)){
+                    count++
+                }
+            }
+        }
+        return count
+    }
+
 }
